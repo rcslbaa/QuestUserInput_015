@@ -154,3 +154,27 @@ fun Praktikum(modifier: Modifier = Modifier) {
 
             Spacer(Modifier.height(8.dp))
 
+            // Jenis Kelamin
+            Text("Jenis Kelamin", fontWeight = FontWeight.Bold)
+            Row {
+                genderList.forEach { item ->
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .selectable(
+                                selected = jenisKelamin == item,
+                                onClick = { jenisKelamin = item }
+                            )
+                            .padding(end = 12.dp)
+                    ) {
+                        RadioButton(
+                            selected = jenisKelamin == item,
+                            onClick = { jenisKelamin = item }
+                        )
+                        Text(item)
+                    }
+                }
+            }
+
+            Spacer(Modifier.height(8.dp))
+
