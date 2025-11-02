@@ -25,3 +25,13 @@ import java.util.*
 
 @Composable
 fun Praktikum(modifier: Modifier = Modifier) {
+    // State
+    var nama by remember { mutableStateOf("") }
+    var kota by remember { mutableStateOf("") }
+    var tanggal by remember { mutableStateOf("") }
+    var rt by remember { mutableStateOf("") }
+    var rw by remember { mutableStateOf("") }
+    var umur by remember { mutableStateOf("") }
+    var jenisKelamin by remember { mutableStateOf("") }
+    var setuju by remember { mutableStateOf(false) }
+    var showDialog by remember { mutableStateOf(false) }
