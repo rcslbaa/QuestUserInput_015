@@ -106,3 +106,17 @@ fun Praktikum(modifier: Modifier = Modifier) {
 
             Spacer(Modifier.height(8.dp))
 
+            // Input Tanggal Lahir
+            OutlinedTextField(
+                value = tanggal,
+                onValueChange = { },
+                label = { Text("Tanggal Lahir (MM/DD/YYYY)") },
+                singleLine = true,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clickable { datePickerDialog.show() },
+                enabled = false,
+            )
+
+            Spacer(Modifier.height(8.dp))
+
