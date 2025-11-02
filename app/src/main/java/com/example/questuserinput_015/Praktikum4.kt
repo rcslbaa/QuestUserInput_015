@@ -54,3 +54,10 @@ fun Praktikum(modifier: Modifier = Modifier) {
         month,
         day
     )
+
+    // Layout Utama
+    Box(
+        modifier = Modifier
+            .fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ) {
