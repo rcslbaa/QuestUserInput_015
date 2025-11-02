@@ -178,3 +178,14 @@ fun Praktikum(modifier: Modifier = Modifier) {
 
             Spacer(Modifier.height(8.dp))
 
+            // Checkbox
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Checkbox(
+                    checked = setuju,
+                    onCheckedChange = { setuju = it }
+                )
+                Text("Saya setuju dengan syarat dan ketentuan yang berlaku")
+            }
+
+            Spacer(Modifier.height(16.dp))
+
