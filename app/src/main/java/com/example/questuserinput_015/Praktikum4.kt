@@ -143,3 +143,14 @@ fun Praktikum(modifier: Modifier = Modifier) {
 
             Spacer(Modifier.height(8.dp))
 
+            // Input Umur
+            OutlinedTextField(
+                value = umur,
+                onValueChange = { umur = it },
+                label = { Text("Umur") },
+                singleLine = true,
+                modifier = Modifier.fillMaxWidth()
+            )
+
+            Spacer(Modifier.height(8.dp))
+
