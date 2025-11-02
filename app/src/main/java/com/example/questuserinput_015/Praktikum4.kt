@@ -67,3 +67,13 @@ fun Praktikum(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
         )
+
+        Column(
+            modifier = Modifier
+                .padding(20.dp)
+                .clip(RoundedCornerShape(30.dp))
+                .background(Color.White.copy(alpha = 0.9f))
+                .padding(20.dp)
+                .verticalScroll(rememberScrollState()),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
