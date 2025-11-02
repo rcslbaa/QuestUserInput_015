@@ -202,3 +202,31 @@ fun Praktikum(modifier: Modifier = Modifier) {
                 Text("Submit", color = Color.White)
             }
         }
+
+        // Dialog Hasil
+        if (showDialog) {
+            AlertDialog(
+                onDismissRequest = { showDialog = false },
+                confirmButton = {
+                    Button(onClick = { showDialog = false }) {
+                        Text("OK")
+                    }
+                },
+                title = { Text("Berhasil") },
+                text = {
+                    Text(
+                        """
+                        Nama : $nama
+                        Kota Asal : $kota
+                        Tgl Lahir : $tanggal
+                        RT : $rt
+                        RW : $rw
+                        Umur : $umur
+                        Jenis Kelamin : $jenisKelamin
+                        """.trimIndent()
+                    )
+                }
+            )
+        }
+    }
+}
